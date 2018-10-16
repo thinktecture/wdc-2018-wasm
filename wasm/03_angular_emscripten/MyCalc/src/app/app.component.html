@@ -1,0 +1,19 @@
+<div class="example-container">
+  <h2>
+    High Performance Multiplier :-)
+  </h2>
+  <mat-form-field>
+    <input matInput autocomplete="off" placeholder="a" [(ngModel)]="a">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput autocomplete="off" placeholder="b" [(ngModel)]="b">
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="multiply()">Multiply</button>
+
+  <br>
+  <div *ngIf="result">
+    Result: {{ result }}
+  </div>
+</div>
